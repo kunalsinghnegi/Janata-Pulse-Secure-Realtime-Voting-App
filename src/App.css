@@ -1,0 +1,146 @@
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f5f7fa;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Leading candidate box */
+.leading-box {
+  background-color: #fff8e1;
+  border-left: 4px solid #ffc107;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.leading-candidate {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007b5e;
+}
+
+.tease-message {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Candidate card */
+.candidate {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.candidate-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Vote button */
+.vote-button {
+  background-color: #28a745;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vote-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.vote-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Results section */
+.results {
+  margin-top: 2rem;
+  background-color: #f1f3f5;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+.results h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.progress-fill {
+  background-color: #4caf50;
+  height: 100%;
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  transition: width 0.5s ease;
+}
+
+/* Responsive for smaller devices */
+@media screen and (max-width: 480px) {
+  .app-container {
+    padding: 0.75rem;
+  }
+
+  .header {
+    font-size: 1.05rem;
+  }
+
+  .vote-button {
+    font-size: 0.95rem;
+  }
+
+  .candidate-name {
+    font-size: 1rem;
+  }
+
+  .leading-box,
+  .results {
+    font-size: 0.95rem;
+  }
+
+  .progress-fill {
+    font-size: 0.75rem;
+  }
+}
