@@ -28,25 +28,7 @@ Hosting	Firebase Hosting
 
 Follow these steps to run the project locally 👇
 
-# 1️⃣ Clone the repository
-git clone https://github.com/your-username/janata-pulse.git
-cd janata-pulse
 
-# 2️⃣ Install dependencies
-npm install
-
-# 3️⃣ Add your Firebase configuration
-Create a `.env` file in the root directory and add:
-REACT_APP_API_KEY=your_api_key
-REACT_APP_AUTH_DOMAIN=your_auth_domain
-REACT_APP_DATABASE_URL=your_database_url
-REACT_APP_PROJECT_ID=your_project_id
-
-# 4️⃣ Start the app
-npm start
-
-
-App will run on 👉 http://localhost:3000
 
 🧠 How It Works
 
